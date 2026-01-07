@@ -11,20 +11,15 @@ form.addEventListener("submit", function (event) {
   const email = document.getElementById("email").value.trim();
   const location = document.getElementById("location").value.trim();
 
-  // VALIDASI INPUT
+  // VALIDASI
   if (name === "" || phone === "" || email === "" || location === "") {
     alert("Mohon lengkapi atau isi seluruh data kontak.");
     return;
   }
 
-  const contact = {
-    name,
-    phone,
-    email,
-    location
-  };
-
+  const contact = { name, phone, email, location };
   contacts.push(contact);
+
   tampilkanKontak();
   form.reset();
 });
@@ -32,23 +27,33 @@ form.addEventListener("submit", function (event) {
 function tampilkanKontak() {
   contactList.innerHTML = "";
 
-  contacts.forEach(function (contact, index) {
-    const div = document.createElement("div");
-    div.className = "bg-white p-3 rounded shadow";
+  if (contacts.length === 0) {
+    contactList.innerHTML = `
+      <p class="text-gray-500 italic">Belum ada data kontak.</p>
+    `;
+    return;
+  }
 
-    div.innerHTML = `
-      <p class="font-semibold">${contact.name}</p>
-      <p>📞 ${contact.phone}</p>
-      <p>📧 ${contact.email}</p>
-      <p>📍 ${contact.location}</p>
+  contacts.forEach((contact, index) => {
+    const card = document.createElement("div");
+    card.className =
+      "bg-white rounded-xl shadow p-4 flex justify-between items-start hover:shadow-md transition";
+
+    card.innerHTML = `
+      <div>
+        <p class="text-lg font-semibold">${contact.name}</p>
+        <p class="text-sm text-gray-600">📞 ${contact.phone}</p>
+        <p class="text-sm text-gray-600">📧 ${contact.email}</p>
+        <p class="text-sm text-gray-600">📍 ${contact.location}</p>
+      </div>
       <button
         onclick="hapusKontak(${index})"
-        class="mt-2 bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">
+        class="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600 transition">
         Hapus
       </button>
     `;
 
-    contactList.appendChild(div);
+    contactList.appendChild(card);
   });
 }
 
