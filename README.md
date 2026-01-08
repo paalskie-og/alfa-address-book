@@ -65,7 +65,7 @@ Project ini dikembangkan menggunakan:
  Pencarian kontak
 
 ## 🚀 Demo
-Live demo akan ditambahkan setelah deployment ke Vercel.
+https://alfa-address-book.vercel.app/
 
 ## 📬 Contact
 GitHub: https://github.com/paalskie-og
