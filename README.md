@@ -39,28 +39,43 @@ address-book/
 └── tailwind.config.js
 
 
-🧰 Teknologi & Tools : 
+## 🧰 Teknologi & Tools
+Project ini dikembangkan menggunakan beberapa teknologi dan tools berikut:
 
-Project ini dikembangkan menggunakan:
+- **HTML5**  
+  Digunakan untuk membangun struktur halaman web dengan elemen semantik yang jelas dan mudah dipahami.
 
-HTML5 – Struktur halaman web
+- **Tailwind CSS**  
+  Digunakan untuk mengatur tampilan dan layout agar terlihat modern, responsif, dan konsisten tanpa menulis CSS secara manual.
 
-Tailwind CSS – Styling dan layout UI
+- **JavaScript (Vanilla JS)**  
+  Digunakan untuk mengelola logika aplikasi seperti menambah, menampilkan, mengedit, menghapus, dan mencari data kontak, serta manipulasi DOM.
 
-JavaScript (Vanilla JS) – Logika aplikasi
+- **LocalStorage**  
+  Digunakan untuk menyimpan data kontak di browser agar data tetap tersimpan meskipun halaman di-refresh.
 
-Git & GitHub – Version control dan repository
+- **Git**  
+  Digunakan sebagai version control untuk mencatat setiap perubahan kode selama proses pengembangan.
 
-Vercel – Deployment website
+- **GitHub**  
+  Digunakan sebagai repository online untuk menyimpan source code dan mengelola project.
+
+- **Visual Studio Code (VS Code)**  
+  Digunakan sebagai code editor utama dalam proses pengembangan aplikasi.
+
+- **Vercel**  
+  Digunakan untuk melakukan deployment aplikasi agar dapat diakses secara publik melalui browser.
 
 
-📬 Contact & GitHub
 
-Jika ingin melihat source code atau memberikan masukan:
+## 📬 Contact
+Jika terdapat pertanyaan, saran, atau feedback terkait project ini, silakan menghubungi saya melalui:
 
-GitHub: paalskie-og
-Email: alfa.rizki25@gmail.com
+- **GitHub:** [paalskie-og](https://github.com/paalskie-og)
+- **Email:** alfa.rizki25@gmail.com
 
+---
 
-💡 Project ini dibuat sebagai bagian dari latihan dan evaluasi pengembangan web.
-Saran dan feedback sangat diterima untuk pengembangan selanjutnya. adios!
+> 💡 *Project ini dibuat sebagai bagian dari latihan dan evaluasi pengembangan web.  
+Saran dan feedback sangat diterima untuk pengembangan selanjutnya.  
+Adios!*
