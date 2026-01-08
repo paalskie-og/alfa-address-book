@@ -1,31 +1,31 @@
-# 📒 Address Book
+# 📒 Alfa Address Book App
 
 Project ini merupakan aplikasi **Address Book berbasis web** yang digunakan untuk mengelola data kontak secara sederhana dan interaktif.  
-Web ini memungkinkan pengguna untuk **menambahkan, mengedit, menghapus, dan mencari kontak**, serta mendukung **Simple** untuk kenyamanan penggunaan.
+Aplikasi ini memungkinkan pengguna untuk **menambahkan, menampilkan, mengedit, menghapus, dan mencari kontak**, serta mendukung **Dark Mode** untuk kenyamanan penggunaan.
 
 ---
 
 ## 🎯 Tujuan Project
-- Menerapkan konsep **CRUD (Create, Read, Update, Delete)** menggunakan JavaScript.
-- Mengelola data kontak secara lokal menggunakan **localStorage**.
-- Membuat tampilan antarmuka yang **modern, responsif, dan nyaman digunakan**.
-- Mengimplementasikan workflow **Git & GitHub** sesuai standar repository.
+- Menerapkan konsep CRUD (Create, Read, Update, Delete) menggunakan JavaScript.
+- Mengelola data kontak secara lokal menggunakan localStorage.
+- Membuat tampilan antarmuka yang modern dan responsif.
+- Menggunakan Git & GitHub sebagai version control.
 
 ---
 
-## 📄 Fitur Utama
-- ➕ Tambah kontak baru  
-- ✏️ Edit data kontak  
-- ❌ Hapus kontak  
-- 🔍 Pencarian kontak secara real-time  
-- 🌙 Dark Mode  
-- 💾 Penyimpanan data menggunakan localStorage  
-- 📱 Tampilan responsif (desktop & mobile)
+## ✨ Fitur Utama
+- Menambahkan kontak  
+- Menampilkan daftar kontak  
+- Mengedit kontak  
+- Menghapus kontak  
+- Pencarian kontak  
+- Dark Mode  
+- Penyimpanan data lokal  
 
 ---
 
 ## 📁 Struktur Folder
-Struktur folder pada project ini mengikuti standar sebagai berikut:
+Struktur folder pada project ini mengikuti standar berikut:
 
 ```text
 address-book/
@@ -38,21 +38,41 @@ address-book/
 ├── README.md
 └── tailwind.config.js
 
-🧰 Teknologi & Tools
-Project ini dikembangkan menggunakan beberapa teknologi dan tools berikut:
+---
 
-HTML5
 
-Tailwind CSS
+## 🧰 Teknologi & Tools
+Project ini dikembangkan menggunakan:
 
-JavaScript (Vanilla JS)
+- HTML5
+- Tailwind CSS
+- JavaScript (Vanilla JS)
+- LocalStorage
+- Git & GitHub
+- Visual Studio Code
+- Vercel
 
-LocalStorage
+## 🚧 Progress Pengembangan
+ Inisialisasi project
 
-Git
+ Struktur folder sesuai standar
 
-GitHub
+ Fitur CRUD
 
-Visual Studio Code (VS Code)
+ Integrasi Tailwind
 
-Vercel
+ Dark Mode
+
+ Pencarian kontak
+
+## 🚀 Demo
+Live demo akan ditambahkan setelah deployment ke Vercel.
+
+## 📬 Contact
+GitHub: https://github.com/paalskie-og
+
+Email: alfa.rizki25@gmail.com
+
+## 💡 Project ini dibuat sebagai bagian dari latihan dan evaluasi pengembangan web.
+Saran dan feedback sangat diterima untuk pengembangan selanjutnya.
+Adios!
