@@ -5,108 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Address Book</title>
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen flex flex-col">
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen flex flex-col">
 
   <!-- HEADER -->
-  <header class="bg-blue-600 text-white py-5 shadow">
-    <div class="container mx-auto text-center">
-      <h1 class="text-2xl font-bold">📘 Address Book</h1>
-      <p class="text-sm opacity-90">Kelola kontak dengan mudah & rapi</p>
+  <header class="bg-indigo-600 dark:bg-indigo-700 text-white p-6 shadow">
+    <div class="flex items-center justify-between max-w-6xl mx-auto">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/LOGOUMHT.png" class="w-12 rounded-full">
+        <div>
+          <h1 class="text-xl font-bold">Address Book</h1>
+          <p class="text-xs opacity-90">Manajemen Kontak</p>
+        </div>
+      </div>
+
+      <button
+        id="darkToggle"
+        class="bg-white/20 px-3 py-1 rounded text-sm hover:bg-white/30"
+      >
+        🌙 Dark
+      </button>
     </div>
   </header>
 
   <!-- MAIN -->
-  <main class="flex-1 container mx-auto p-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+  <main class="flex-1 max-w-6xl mx-auto p-6">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
       <!-- FORM -->
-      <section class="bg-white rounded-2xl shadow-lg p-6">
-        <h2 class="text-xl font-semibold mb-5 text-gray-700">
-          ➕ Tambah Kontak
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h2 id="formTitle" class="text-lg font-semibold mb-4 text-center">
+          Tambah Kontak
         </h2>
 
         <form id="contactForm" class="space-y-4">
-          <div>
-            <label for="name" class="block text-sm font-medium text-gray-600">
-              Nama
-            </label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Masukkan nama"
-              class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
-            />
-          </div>
+          <input type="hidden" id="editIndex">
 
-          <div>
-            <label for="phone" class="block text-sm font-medium text-gray-600">
-              No. Telepon
-            </label>
-            <input
-              type="text"
-              id="phone"
-              placeholder="Masukkan nomor telepon"
-              class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
-            />
-          </div>
+          <input id="name" type="text" placeholder="Nama"
+            class="w-full p-2 rounded border dark:border-gray-700 dark:bg-gray-700" />
 
-          <div>
-            <label for="email" class="block text-sm font-medium text-gray-600">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Masukkan email"
-              class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
-            />
-          </div>
+          <input id="phone" type="tel" placeholder="No. Telepon"
+            class="w-full p-2 rounded border dark:border-gray-700 dark:bg-gray-700" />
 
-          <div>
-            <label for="location" class="block text-sm font-medium text-gray-600">
-              Lokasi
-            </label>
-            <input
-              type="text"
-              id="location"
-              placeholder="Masukkan lokasi"
-              class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-300 focus:outline-none"
-            />
-          </div>
+          <input id="email" type="email" placeholder="Email"
+            class="w-full p-2 rounded border dark:border-gray-700 dark:bg-gray-700" />
+
+          <input id="location" type="text" placeholder="Alamat"
+            class="w-full p-2 rounded border dark:border-gray-700 dark:bg-gray-700" />
 
           <button
             type="submit"
-            class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
-            Simpan Kontak
+            class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded"
+          >
+            Simpan
           </button>
         </form>
-      </section>
+      </div>
 
       <!-- LIST -->
-      <section>
-        <h2 class="text-xl font-semibold mb-5 text-gray-700">
-          📒 Daftar Kontak
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h2 class="text-lg font-semibold mb-3 text-center">
+          Daftar Kontak
         </h2>
 
-        <div id="contactList" class="space-y-4">
-          <p class="text-gray-500 italic">
-            Belum ada data kontak.
-          </p>
-        </div>
-      </section>
+        <!-- SEARCH -->
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Cari nama / email / nomor..."
+          class="w-full mb-4 p-2 rounded border dark:border-gray-700 dark:bg-gray-700"
+        />
 
-    </div>
+        <ul id="contactList" class="space-y-3"></ul>
+      </div>
+
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-gray-200 text-center py-3 text-sm text-gray-600">
-    © Alfa Rizki 2025 Address Book App
+  <footer class="text-center text-sm p-4 bg-gray-200 dark:bg-gray-800">
+    © 2025 Address Book by Alfa Rizki. All rights reserved.
   </footer>
 
-  <!-- SCRIPT -->
   <script src="assets/scripts/script.js"></script>
 </body>
 </html>
