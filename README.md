@@ -39,13 +39,6 @@ address-book/
 └── tailwind.config.js
 
 ---
-<<<<<<< HEAD
-=======
-
-## 🧰 Teknologi & Tools
-Project ini dikembangkan menggunakan beberapa teknologi dan tools berikut:
->>>>>>> a5142b0b65e1b4814596c57f1f886d60ba5aa01f
-
 
 ## 🧰 Teknologi & Tools
 Project ini dikembangkan menggunakan:
