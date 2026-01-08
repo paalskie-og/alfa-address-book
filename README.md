@@ -1,7 +1,7 @@
-# 📒 Alfa Address Book App
+# 📒 Alfa Address Book
 
 Project ini merupakan aplikasi **Address Book berbasis web** yang digunakan untuk mengelola data kontak secara sederhana dan interaktif.  
-Aplikasi ini memungkinkan pengguna untuk **menambahkan, menampilkan, mengedit, menghapus, dan mencari kontak**, serta mendukung **Dark Mode** untuk kenyamanan penggunaan.
+ini memungkinkan pengguna untuk **menambahkan, menampilkan, mengedit, menghapus, dan mencari kontak**, serta mendukung **Dark Mode** untuk kenyamanan penggunaan.
 
 ---
 
@@ -27,7 +27,7 @@ Aplikasi ini memungkinkan pengguna untuk **menambahkan, menampilkan, mengedit, m
 ## 📁 Struktur Folder
 Struktur folder pada project ini mengikuti standar berikut:
 
-text
+```text
 address-book/
 ├── assets/
 │   ├── images/
@@ -38,14 +38,7 @@ address-book/
 ├── README.md
 └── tailwind.config.js
 
----
-<<<<<<< HEAD
-=======
-
-## 🧰 Teknologi & Tools
-Project ini dikembangkan menggunakan beberapa teknologi dan tools berikut:
->>>>>>> a5142b0b65e1b4814596c57f1f886d60ba5aa01f
-
+--- 
 
 ## 🧰 Teknologi & Tools
 Project ini dikembangkan menggunakan:
