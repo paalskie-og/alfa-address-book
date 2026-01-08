@@ -24,7 +24,7 @@ Web ini memungkinkan pengguna untuk **menambahkan, mengedit, menghapus, dan menc
 
 ---
 
-## 🗂️ Struktur Folder
+## 📁 Struktur Folder
 Struktur folder pada project ini mengikuti standar sebagai berikut:
 
 ```text
@@ -38,44 +38,21 @@ address-book/
 ├── README.md
 └── tailwind.config.js
 
-
-## 🧰 Teknologi & Tools
+🧰 Teknologi & Tools
 Project ini dikembangkan menggunakan beberapa teknologi dan tools berikut:
 
-- **HTML5**  
-  Digunakan untuk membangun struktur halaman web dengan elemen semantik yang jelas dan mudah dipahami.
+HTML5
 
-- **Tailwind CSS**  
-  Digunakan untuk mengatur tampilan dan layout agar terlihat modern, responsif, dan konsisten tanpa menulis CSS secara manual.
+Tailwind CSS
 
-- **JavaScript (Vanilla JS)**  
-  Digunakan untuk mengelola logika aplikasi seperti menambah, menampilkan, mengedit, menghapus, dan mencari data kontak, serta manipulasi DOM.
+JavaScript (Vanilla JS)
 
-- **LocalStorage**  
-  Digunakan untuk menyimpan data kontak di browser agar data tetap tersimpan meskipun halaman di-refresh.
+LocalStorage
 
-- **Git**  
-  Digunakan sebagai version control untuk mencatat setiap perubahan kode selama proses pengembangan.
+Git
 
-- **GitHub**  
-  Digunakan sebagai repository online untuk menyimpan source code dan mengelola project.
+GitHub
 
-- **Visual Studio Code (VS Code)**  
-  Digunakan sebagai code editor utama dalam proses pengembangan aplikasi.
+Visual Studio Code (VS Code)
 
-- **Vercel**  
-  Digunakan untuk melakukan deployment aplikasi agar dapat diakses secara publik melalui browser.
-
-
-
-## 📬 Contact
-Jika terdapat pertanyaan, saran, atau feedback terkait project ini, silakan menghubungi saya melalui:
-
-- **GitHub:** [paalskie-og](https://github.com/paalskie-og)
-- **Email:** alfa.rizki25@gmail.com
-
----
-
-> 💡 *Project ini dibuat sebagai bagian dari latihan dan evaluasi pengembangan web.  
-Saran dan feedback sangat diterima untuk pengembangan selanjutnya.  
-Adios!*
+Vercel
