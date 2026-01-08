@@ -27,7 +27,6 @@ ini memungkinkan pengguna untuk **menambahkan, menampilkan, mengedit, menghapus,
 ## 📁 Struktur Folder
 Struktur folder pada project ini mengikuti standar berikut:
 
-``text
 address-book/
 ├── assets/
 │   ├── images/
