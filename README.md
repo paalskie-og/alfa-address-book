@@ -27,7 +27,7 @@ Web ini memungkinkan pengguna untuk **menambahkan, mengedit, menghapus, dan menc
 ## 📁 Struktur Folder
 Struktur folder pada project ini mengikuti standar sebagai berikut:
 
-```text
+text
 address-book/
 ├── assets/
 │   ├── images/
